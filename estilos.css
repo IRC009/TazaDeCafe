@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #3c3b3e, #6d6d6d);
+}
+.container {
+  position: relative;
+  top: 50px;
+}
+.cup {
+  position: relative;
+  width: 280px;
+  height: 300px;
+  background: linear-gradient(to right, #707070, #d9d9d9);
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+.top {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to right, #b0b0b0, #d9d9d9);
+  border-radius: 50%;
+}
+.circulo {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.cafe {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #836f67, #784747);
+  border-radius: 50%;
+}
+.mango {
+  position: absolute;
+  right: -70px;
+  top: 40px;
+  width: 160px;
+  height: 180px;
+  border: 25px solid #d4d4d4;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-radius: 50%;
+  transform: rotate(42deg);
+}
+
+.plato {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 100px;
+  background: linear-gradient(to right, #b8b8b8, #dedede);
+  border-radius: 50%;
+  box-shadow: 0 45px 30px rgba(172, 172, 172, 0.279);
+}
+.plateShadow {
+  position: absolute;
+  bottom: -25px;
+  left: 2%;
+  width: 240px;
+  height: 60px;
+  background: linear-gradient(to right, #797979, #909090);
+  border-radius: 40%;
+  filter: blur(10px);
+}
+.vapor {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+}
+.vapor span {
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 2px 50px;
+  min-width: 8px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  animation: vapor 10s linear infinite;
+  opacity: 0;
+  filter: blur(15px);
+  animation-delay: calc(var(--delay) * -0.5s);
+}
+
+
+
+@keyframes vapor {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(4);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(8);
+  }
+}
