@@ -14,7 +14,7 @@ body {
   position: relative;
   top: 50px;
 }
-.cup {
+.taza {
   position: relative;
   width: 280px;
   height: 300px;
@@ -75,7 +75,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 45px 30px rgba(172, 172, 172, 0.279);
 }
-.plateShadow {
+.platoShadow {
   position: absolute;
   bottom: -25px;
   left: 2%;
@@ -91,7 +91,7 @@ body {
   z-index: 1;
   padding: 0 20px;
 }
-.vapor span {
+span {
   position: relative;
   bottom: 50px;
   display: block;
